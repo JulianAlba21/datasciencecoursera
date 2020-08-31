@@ -21,3 +21,29 @@ as.character(y)
 #lists
 x<-list(1,"a",TRUE,1+4i)
 x
+
+#matrices
+m<-matrix(1:6,nrow = 2, ncol = 3)
+m
+dim(m)
+attributes(m)
+
+m<-1:10
+dim(m)<-c(2,5)
+m
+
+x<-1:3
+y<-10:12
+cbind(x,y)
+rbind(x,y)
+
+#FACTORS
+x<- factor(c('yes','no','yes','no','yes'))
+x
+table(x)
+unclass(x)
+
+x<- factor(c('yes','no','yes','no','yes'),levels = c('yes','no'))
+x
+table(x)
+unclass(x)
